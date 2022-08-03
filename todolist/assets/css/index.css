@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+main .todoappwrapper {
+  width: 500px;
+  height: 700px;
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#434343), to(#000000));
+  background: linear-gradient(to bottom, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+
+main .todoappwrapper .todoapp {
+  height: 70%;
+  width: 70%;
+  border-radius: 15px;
+  background: #780206;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#061161), to(#780206));
+  background: linear-gradient(to bottom, #061161, #780206);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .todoappwrapper .todoapp .taskcounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: whitesmoke;
+}
+
+main .todoappwrapper .todoapp .taskcounter h1 {
+  font-size: 17px;
+}
+
+main .todoappwrapper .todoapp .taskcounter h1 span {
+  margin-right: 5px;
+}
+
+main .todoappwrapper .todoapp .tasks {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
+  padding: 3px 5px;
+}
+
+main .todoappwrapper .todoapp .tasks .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px !important;
+  padding: 0 10px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+main .todoappwrapper .todoapp .tasks .task:nth-child(odd) {
+  background: linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+}
+
+main .todoappwrapper .todoapp .tasks .task:nth-child(even) {
+  background: linear-gradient(70deg, #fff810 30%, rgba(0, 0, 0, 0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+}
+
+main .todoappwrapper .todoapp .tasks .task input {
+  padding: 5px;
+}
+
+main .todoappwrapper .todoapp .tasks .task label {
+  color: black;
+  font-size: 30px;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+main .todoappwrapper .todoapp .tasks .task .delete {
+  font-size: 20px;
+  border: none;
+  color: rgba(157, 11, 11, 0.803);
+}
+
+main .todoappwrapper .todoapp .tasks .task .delete i:nth-child(odd) {
+  background-color: #5ac8fa;
+}
+
+main .todoappwrapper .todoapp .tasks .task .delete i:nth-child(even) {
+  background-color: #ff7ee3 !important;
+}
+
+main .todoappwrapper .todoapp .createtask {
+  padding: 5px;
+}
+
+main .todoappwrapper .todoapp .createtask form input {
+  width: 80%;
+  border-radius: 13px;
+  border: none;
+  padding: 5px 9px;
+}
+
+main .todoappwrapper .todoapp .createtask form button {
+  width: 15%;
+  border-radius: 13px;
+  border: 1px solid #0f6b79;
+  color: white;
+  background-color: rgba(22, 101, 185, 0.933);
+  padding: 4px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .todoappwrapper {
+        width: 500px;
+        height: 700px;
+        background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #434343, #000000);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #434343, #000000);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+
+
+
+        .todoapp {
+            height: 70%;
+            width: 70%;
+            border-radius: 15px;
+            background: #780206;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #061161, #780206);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #061161, #780206);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            display: flex;
+            flex-direction: column;
+
+            .taskcounter {
+                display: flex;
+                height: 20%;
+                align-items: center;
+                justify-content: space-around;
+                color: whitesmoke;
+
+
+
+                h1 {
+
+                    font-size: 17px;
+
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .tasks {
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                overflow: auto;
+
+                padding: 3px 5px;
+
+                .task {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 45px !important;
+                    padding: 0 10px;
+                    border-radius: 15px;
+                    margin-bottom: 5px;
+
+                    &:nth-child(odd) {
+                        background: -webkit-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+                        background: -o-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+                        background: -moz-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+                        background: linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+                    }
+
+                    &:nth-child(even) {
+                        background: -webkit-linear-gradient(70deg, #fff810 30%, rgba(0, 0, 0, 0) 30%), -webkit-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+                        background: -o-linear-gradient(70deg, #fff810 30%, rgba(0, 0, 0, 0) 30%), -o-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+                        background: -moz-linear-gradient(70deg, #fff810 30%, rgba(0, 0, 0, 0) 30%), -moz-linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+                        background: linear-gradient(70deg, #fff810 30%, rgba(0, 0, 0, 0) 30%), linear-gradient(30deg, #63e89e 60%, #ff7ee3 60%);
+                    }
+
+                    input {
+                        padding: 5px;
+
+                    }
+
+                    label {
+                        color: black;
+                        font-size: 30px;
+                        font-family: 'Mouse Memoirs', sans-serif;
+
+                    }
+
+                    .delete {
+                        font-size: 20px;
+                        border: none;
+                        color: rgba(157, 11, 11, 0.803);
+
+                        i {
+                            &:nth-child(odd) {
+
+                                background-color: #5ac8fa;
+
+                            }
+
+                            &:nth-child(even) {
+                                background-color: #ff7ee3 !important;
+                            }
+                        }
+
+                    }
+
+                    background-color: rgba(255, 255, 255, 0.5);
+                }
+            }
+
+            .createtask {
+                padding: 5px;
+
+                form {
+                    input {
+                        width: 80%;
+                        border-radius: 13px;
+                        border: none;
+                        padding: 5px 9px;
+
+                    }
+
+                    button {
+                        width: 15%;
+                        border-radius: 13px;
+                        border: 1px solid rgb(15, 107, 121);
+                        color: white;
+                        background-color: rgba(22, 101, 185, 0.933);
+                        padding: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
